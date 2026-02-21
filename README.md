@@ -80,3 +80,50 @@ print(10 + 5)
 # Aquí simulamos un error corregido (Python es secuencial)
 print("Rumbo: Norte")
 print("Corrección: Nor-Noreste")
+
+### Lección 1.3: Variables y Tipos de Datos (Las Bodegas del Barco)
+Para que un programa sea útil, necesita "memoria" para guardar y manipular información. En Python, utilizamos **Variables** (contenedores con una etiqueta) y asignamos datos utilizando el signo `=`.
+
+Los datos se clasifican en tipos (para saber qué podemos hacer con ellos):
+* `String` (Texto): Siempre entre comillas `""`.
+* `Integer` (Enteros): Números para contar, sin comillas.
+* `Float` (Decimales): Números con precisión, usan punto `.`.
+* `Boolean` (Booleanos): Estados de Verdadero o Falso (`True` / `False`).
+
+**Práctica de Bodega:**
+Definición de parámetros iniciales de navegación utilizando diferentes tipos de datos.
+
+```python
+# Lección 1.3 - Variables básicas
+destino = "Canal de Chacao"         # String
+velocidad_nudos = 12                # Integer
+combustible_estimado = 1850.5       # Float
+buen_clima = True                   # Boolean
+
+print("Destino:", destino)
+print("Velocidad en nudos:", velocidad_nudos)
+print("Litros estimados de combustible:", combustible_estimado)
+print("¿Hay buen clima?:", buen_clima)
+
+# Lección 1.4 - Simulación de consumo de combustible
+tanque_total = 5000
+consumo_viaje = 1200
+
+# Operador matemático (Resta)
+combustible_restante = tanque_total - consumo_viaje
+
+# Operador de comparación (Mayor que)
+reserva_segura = combustible_restante > 1000
+
+print("Combustible restante:", combustible_restante)
+print("¿Reserva segura disponible?:", reserva_segura)
+
+# Lección 1.5 - Sistema de Alarma de Presión de Aceite
+presion_aceite = 25 # Forzamos falla para prueba de estrés
+
+if presion_aceite < 30:
+    print("🚨 ALARMA: Presión baja. Detener motor.")
+elif presion_aceite > 60:
+    print("⚠️ ALARMA: Sobrepresión. Revisar válvulas.")
+else:
+    print("✅ Presión normal. Continuar navegación.")
